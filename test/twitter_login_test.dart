@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:twitter_login/entity/user.dart';
+import '../lib/entity/user.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -15,8 +15,7 @@ void main() {
         'name': 'test_name',
         'screen_name': 'test_screen_name',
       };
-
-      final user = User._(json);
+      final user = User.fromJson(json);
       expect(user is User, isTrue);
     });
 
@@ -28,7 +27,7 @@ void main() {
         'screen_name': 'test_screen_name',
       };
 
-      final user = User._(json);
+      final user = User.fromJson(json);
       expect(user is User, isTrue);
     });
   });
