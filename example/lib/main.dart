@@ -24,13 +24,14 @@ class _MyAppState extends State<MyApp> {
             onPressed: () async {
               final twitterLogin = TwitterLogin(
                 // Consumer API keys
-                apiKey: 'xxx',
+                apiKey: 'ZJQguiec8DqOf4rpwtPREzvC1',
                 // Consumer API Secret keys
-                apiSecretKey: 'xxxxx',
+                apiSecretKey:
+                    'wv32pzdzZ3dCisHF795GQN5jXhATfuUzF0Za8ZUXKBaGDN0zcU',
                 // Registered Callback URLs in TwitterApp
                 // Android is a deeplink
                 // iOS is a URLScheme
-                redirectURI: 'example://',
+                redirectURI: 'example://gizmos',
                 // Forces the user to enter their credentials
                 // to ensure the correct users account is authorized.
               );
